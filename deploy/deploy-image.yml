@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of scientificcalculator
+  hosts: all
+  tasks:
+    - name: Pull devclc image
+      docker_image:
+        name: mohitkakkar94/devclc
+        source: pull
