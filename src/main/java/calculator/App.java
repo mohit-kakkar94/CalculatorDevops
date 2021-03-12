@@ -1,7 +1,12 @@
 package calculator;
 import java.util.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 public class App
 {
+
+    private static final Logger logger = LogManager.getLogger(App.class);
+
     public static void main(String args[])
     {
         int choice, flag=0;
@@ -41,15 +46,19 @@ public class App
     }
     
     static double Add(double a, double b) {
+    	logger.info("Adding two numbers" + a + " and " + b);
     	return a + b;
     }
-    static double Subtract(double a, double b) {
+    static double Subtract(double a, double b) {	
+    	logger.info("Subtracting two numbers" + a + " and " + b);
     	return a - b;
     }
     static double Multiply(double a, double b) {
+    	logger.info("Multiplying two numbers" + a + " and " + b);
     	return a * b;
     }
     static double Divide(double a, double b) {
+    	logger.info("Dividing two numbers" + a + " and " + b);
     	if (b == 0) {
     		throw new IllegalArgumentException("Divisor cannot be zero, Exiting");
     	}
