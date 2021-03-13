@@ -14,45 +14,48 @@ public class CalculatorTest {
 	    }
 
 		@Test
-	    public void testAdd() {
+	    public void testLog() {
 	        double a = 15.0;
-	        double b = 20.0;
-	        double expectedResult = 35.0;
-	        double result = calculator.Add(a, b);
+	       
+	        double expectedResult = 2.7080502011;
+	        double result = calculator.Log(a);
 	        Assert.assertEquals(expectedResult, result, 0);
 	    }
 		
 		@Test
-		public void testSubtract() {
-			double a = 34;
-	        double b = 12;
-	        double expectedResult = 22;
-	        double result = calculator.Subtract(a, b);
+		public void testSqrt() {
+			double a = 16;
+	        
+	        double expectedResult = 4;
+	        double result = calculator.Sqrt(a);
 	        Assert.assertEquals(expectedResult, result, 0);
 		}
 		
 		@Test
-		public void testMultiply() {
-			double a = 18.5;
-	        double b = 12.6;
-	        double expectedResult = 233.1;
-	        double result = calculator.Multiply(a, b);
+		public void testPower() {
+			double a = 2;
+	        double b = 3;
+	        double expectedResult = 8;
+	        double result = calculator.Power(a, b);
 	        Assert.assertEquals(expectedResult, result, 0);
 		}
 		
 		@Test
-		public void testDivide() {
-			double a = 60.0;
-	        double b = 12.0;
-	        double expectedResult = 5.0;
-	        double result = calculator.Divide(a, b);
-	        Assert.assertEquals(expectedResult, result, 0.0001);
+		public void testFactorial() {
+			int a = 5;
+	        long expectedResult = 120;
+	       
+	        double result = calculator.Factorial(a);
+	        Assert.assertEquals(expectedResult, result, 0);
 		}
 		
-		@Test(expected = IllegalArgumentException.class)
+		// negative number sqrt,log,factorial exception
+		
+		
+		/*@Test(expected = IllegalArgumentException.class)
 	    public void testDivideByZero() {
 	        int a = 25;
 	        int b = 0;
 	        calculator.Divide(a, b);
-	    }
+	    }*/
 }
