@@ -63,7 +63,7 @@ public class App
     	return Math.sqrt(a);
     }
     static double Power(double a, double b) {
-    	logger.info("Calculating " + num1+" to the power of  "+num2);
+    	logger.info("Calculating " + a +" to the power of  "+ b);
     	return Math.pow(a,b);
     }
     static long Factorial(int a) {
