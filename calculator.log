@@ -1,4 +1,4 @@
-13/Mar/2021:22:26:15 130 [App.java] [INFO] calculator.App Taking natural log of 15.0
-13/Mar/2021:22:26:15 145 [App.java] [INFO] calculator.App Calculating 2.0 to the power of  3.0
-13/Mar/2021:22:26:15 147 [App.java] [INFO] calculator.App Finding sqrt of 16.0
-13/Mar/2021:22:26:15 149 [App.java] [INFO] calculator.App Calculating 5's factorial 
+2021-03-13 23:25:46.836 [main] INFO  calculator.App - Factorial of 10 is 3628800
+2021-03-13 23:25:46.847 [main] INFO  calculator.App - Log of 1.0is0.0
+2021-03-13 23:25:46.849 [main] INFO  calculator.App - Power of 7.0and 3.0 is 343.0
+2021-03-13 23:25:46.850 [main] INFO  calculator.App - Square root of 4.0 is 2.0
