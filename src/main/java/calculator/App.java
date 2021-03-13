@@ -1,6 +1,6 @@
 package calculator;
 import java.util.*;
-import java.lang.math;
+import java.lang.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 public class App
