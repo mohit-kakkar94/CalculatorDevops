@@ -63,11 +63,11 @@ public class App
     	return Math.sqrt(a);
     }
     static double Power(double a, double b) {
-    	logger.info("Calculating " + num1+" to the power of  "+num2));
+    	logger.info("Calculating " + num1+" to the power of  "+num2);
     	return Math.pow(a,b);
     }
     static long Factorial(int a) {
-    logger.info("Calculating " + a +"'s factorial "));
+    logger.info("Calculating " + a +"'s factorial ");
     	long ans=1;
 	    	while(a>0)
 	    	{
