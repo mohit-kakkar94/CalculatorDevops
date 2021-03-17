@@ -25,7 +25,7 @@ public class CalculatorTest {
 		@Test
 		public void testFact() {
 			Assert.assertEquals(3628800, calculator.Fact(10), 0);
-			Assert.assertEquals(Double.NaN, Double.valueOf(calculator.Fact(-5)),0);
+			Assert.assertEquals(-1, Double.valueOf(calculator.Fact(-5)),0);
 		}
 
 	@Test
