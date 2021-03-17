@@ -109,6 +109,10 @@ public class App {
 
     static double Loge(double a) {
 
+        if (a <= 0) {
+            return Double.NEGATIVE_INFINITY;
+        }
+
         double res = Math.log(a);
         logger.info("Log of " + a + "is" + res);
 
