@@ -24,22 +24,16 @@ public class CalculatorTest {
 		
 		@Test
 		public void testFact() {
-			long a = 10;
-
-	        long expectedResult = 3628800;
-	        double result = calculator.Fact(a);
-	        Assert.assertEquals(expectedResult, result, 0);
+			Assert.assertEquals(3628800, calculator.Fact(10), 0);
+			Assert.assertEquals(Double.NaN, Double.valueOf(calculator.Fact(-5)),0);
 		}
 
 	@Test
 	public void testLoge() {
-		double a = 1;
-
-		double expectedResult = 0.0;
-		double result = calculator.Loge(a);
-		Assert.assertEquals(expectedResult, result, 0.0001);
+		Assert.assertEquals(0.0, calculator.Loge(1.0), 0.0001);
+		Assert.assertEquals(Double.NEGATIVE_INFINITY, calculator.Loge(0.0), 0);
 	}
-		
+
 		@Test
 		public void testPowe() {
 			double a = 7;
